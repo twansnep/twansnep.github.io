@@ -70,6 +70,14 @@ p {
     font-weight: bold;
 }
 
+/* @font-face {
+    font-family: Forma DJR Micro;
+    src: url(fonts/forma-djr-micro/static/FormaDJRMicro-Bold.eot);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}  */
+
 /* --- header --- */
 
 header {
