@@ -34,6 +34,10 @@ p {
     text-align: left;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .parhomepage {
     color: #b6622e;
     font-size: 14px;
@@ -70,13 +74,12 @@ p {
     font-weight: bold;
 }
 
-/* @font-face {
+@font-face {
     font-family: Forma DJR Micro;
     src: url(fonts/forma-djr-micro/static/FormaDJRMicro-Bold.eot);
     font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}  */
+} 
+
 
 /* --- header --- */
 
@@ -150,8 +153,8 @@ footer > nav :nth-child(7){
 section {
     background-color: #07733e;
     max-width: 375px;
-    height: auto;
-    padding: 5px
+    height: 667px;
+    padding: 5px;
 }
 
 #logolinkcard {
@@ -162,18 +165,10 @@ section {
 .linkcard2 {
     border-radius: 25px;
     background-color: #fff2cb ;
-    margin: 20px;
+    margin: 30px 20px;
     padding: 5px;
     display: flex;
     align-items: center;
-}
-
-.linkcard3 {
-    border-radius: 25px;
-    background-color: #fff2cb ;
-    margin: 20px;
-    padding: 5px;
-
 }
 
 .linkcard1 > img,
@@ -185,14 +180,12 @@ section {
 }
 
 .linkcard1 > div > p, h2, 
-.linkcard2 > div > p, h2, 
-.linkcard3 > p, h2 {
+.linkcard2 > div > p, h2 {
     margin: 20px;
 }
 
 .linkcard1 > div > p, 
-.linkcard2 > div > p, 
-.linkcard3 > p {
+.linkcard2 > div > p {
     margin-top: 0px;
 }
 
@@ -204,9 +197,7 @@ section {
 /* --- concept page ---> */
 
 .stepscard1,
-.stepscard2,
-.stepscard3,
-.stepscard4 {
+.stepscard2 {
     display: flex;
     flex-direction: row;
     background-color: #fff2cb;
