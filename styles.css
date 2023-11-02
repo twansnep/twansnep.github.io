@@ -1,0 +1,270 @@
+body{
+    background-color: #fff2cb;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: nunito;
+    font-weight: semibold;
+    color: #07733e;
+}
+
+h2{
+    font-size: 30px;
+    font-family: nunito;
+    font-weight: bolder;
+    text-align: left;
+}
+
+h3{
+    font-size: 20px;
+    font-family: nunito;
+    font-weight: medium;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: forma;
+    font-weight: bold;
+    text-align: left;
+}
+
+.parhomepage {
+    color: #b6622e;
+    font-size: 14px;
+    margin: 40px;
+}
+
+/* --- fonts ---*/
+@font-face {
+    font-family:nunito;
+    src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(fonts/Nunito/static/Nunito-SemiBold.ttf);
+    font-weight: semibold;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(fonts/Nunito/static/Nunito-Medium.ttf);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(fonts/Nunito/static/Nunito-ExtraBold.ttf);
+    font-weight:bolder;
+}
+
+@font-face {
+    font-family: forma;
+    src: url(fonts/.30366.otf);
+    font-weight: bold;
+}
+
+/* --- header --- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+header img {
+    max-width: 75px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.menu {
+    max-width: 50px;
+    position: absolute;
+    align-self: baseline;
+    display: flex; }
+
+/* --- footer --- */
+
+footer > nav > ul {
+    text-align: left;
+    font-family: forma;
+}
+
+footer > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li {
+    margin: 10px;
+}
+
+footer > nav > p {
+    margin: 20px;
+    font-size: 10px;
+}
+
+footer h2 {
+    color: #b6622e;
+}
+
+footer > nav :nth-child(7){
+    font-size: 10px;
+    text-align: center;
+}
+
+/* --- homepage ---*/
+
+#ilhome {
+    max-width: 250px;
+}
+
+#arrowdownicon {
+    max-width: 30px;
+    margin-bottom: 28px;
+}
+
+/* linkcards */
+
+section {
+    background-color: #07733e;
+    max-width: 375px;
+    height: auto;
+    padding: 5px
+}
+
+#logolinkcard {
+  border-radius: 0px;
+}
+
+.linkcard1,
+.linkcard2 {
+    border-radius: 25px;
+    background-color: #fff2cb ;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.linkcard3 {
+    border-radius: 25px;
+    background-color: #fff2cb ;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+.linkcard1 > img,
+.linkcard2 > img {
+    border-radius: 25px;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.linkcard1 > div > p, h2, 
+.linkcard2 > div > p, h2, 
+.linkcard3 > p, h2 {
+    margin: 20px;
+}
+
+.linkcard1 > div > p, 
+.linkcard2 > div > p, 
+.linkcard3 > p {
+    margin-top: 0px;
+}
+
+.linkcard2 {
+    background-color: #b6622e;
+    color: white;
+}
+
+/* --- concept page ---> */
+
+.stepscard1,
+.stepscard2,
+.stepscard3,
+.stepscard4 {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff2cb;
+}
+
+.stepscard1 > img,
+.stepscard2 >img,
+.stepscard3 > img,
+.stepscard4 > img {
+    max-width: 120px;
+    align-items: center;
+    display: flex;  
+}
+
+.stepscard1 h2,
+.stepscard2 h2,
+.stepscard3 h2,
+.stepscard4 h2{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.stepscard1 div,
+.stepscard2 div,
+.stepscard3 div,
+.stepscard4 div {
+    width: 50%;
+}
+
+.stepscard3 > img,
+.stepscard4 > img{
+    max-height: 120px;
+}
+
+.stepscard2 > img,
+.stepscard4 > img {
+    margin-left: 87.5px;
+}
+
+
+.stepscard2 > div > p {
+    margin-right: 10px;
+}
+
+/* --- footer --- */
+
+footer > nav > ul {
+    text-align: left;
+    font-family: forma;
+}
+
+footer > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > nav > p {
+    margin: 20px;
+}
+
+footer h2 {
+    color: #b6622e;
+}
+
+footer > nav :nth-child(7){
+    font-size: 10px;
+    text-align: center;
+}
+
