@@ -221,7 +221,7 @@ section {
 
 .linkcard2 {
     background-color: #b6622e;
-    color: white;
+    color: #fff2cb;
 }
 
 #logolinkcard {
@@ -262,6 +262,18 @@ section {
 
 .stepscard2 > div > p {
     margin-right: 10px;
+}
+
+.stepscard4 > div{
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+}
+
+.stepscard4 > div > img,
+.stepscard4 > div > p {
+    width: 150px;
+    align-self: center;
 }
 
 .icon {
@@ -362,6 +374,7 @@ section {
 .brownwhitecard > p,
 .brownwhitecard > h2{
     padding: 10px;
+    margin: 0px;
 }
 
 .projects > div{
