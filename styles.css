@@ -1,9 +1,7 @@
 body{
     background-color: #fff2cb;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
 }
 
 h1 {
@@ -18,20 +16,32 @@ h2{
     font-family: nunito;
     font-weight: bolder;
     text-align: left;
+    margin-left: 0px;
 }
 
 h3{
     font-size: 20px;
     font-family: nunito;
     font-weight: medium;
+    margin: 20px 0px 0px 20px;
+
 }
 
 p {
-    margin-left: 10px;
     font-size: 17px;
     font-family: forma;
     font-weight: bold;
     text-align: left;
+}
+
+li {
+    font-family: nunito;
+    font-weight: medium;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 * {
@@ -83,59 +93,79 @@ p {
 
 /* --- header --- */
 
+header img {
+    max-width: 50px;
+}
+
+header{
+    background-color: white;
+    width: 335px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 25px;
+    margin: 10px;
+} 
+
 header {
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+header > div {
+    flex-direction: row;
     display: flex;
-    justify-content: space-between;
+}
+
+    /* zorgt voor positie van nav items naast logo*/
+div > nav {
+    flex: auto;
+    display: flex;
     align-items: center;
 }
 
-/* nav {
+header div ul { 
     display: flex;
-    justify-content: flex-end;
-} */
-
-header img {
-    max-width: 75px;
-    position: absolute;
-    top: 16px;
-    left: 16px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: auto; /* Zorgt voor opnemen van ruimte in de ul door li */
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
 }
 
-.menu {
-    max-width: 50px;
-    position: absolute;
-    align-self: baseline;
-    display: flex; }
 
 /* --- footer --- */
 
-footer > nav > ul {
+footer > ul {
     text-align: left;
     font-family: forma;
-}
-
-footer > nav > ul > li > a {
-    text-decoration: none;
-    color: black;
 }
 
 footer li {
     margin: 10px;
 }
 
-footer > nav > p {
+footer > p {
     margin: 20px;
     font-size: 10px;
 }
 
 footer h2 {
     color: #b6622e;
+    margin-left: 20px;
 }
 
-footer > nav :nth-child(7){
-    font-size: 10px;
-    text-align: center;
+footer{
+    margin-bottom: 80px;
 }
+
+
 
 /* --- homepage ---*/
 
@@ -153,16 +183,10 @@ footer > nav :nth-child(7){
 section {
     background-color: #07733e;
     max-width: 375px;
-    height: 667px;
     padding: 5px;
 }
 
-#logolinkcard {
-  border-radius: 0px;
-}
-
-.linkcard1,
-.linkcard2 {
+.linkcard1, .linkcard2, .linkcard3 {
     border-radius: 25px;
     background-color: #fff2cb ;
     margin: 30px 20px;
@@ -171,21 +195,27 @@ section {
     align-items: center;
 }
 
-.linkcard1 > img,
-.linkcard2 > img {
-    border-radius: 25px;
+#linkcards img {
     width: 80px;
     height: 80px;
     margin-right: 20px;
 }
 
-.linkcard1 > div > p, h2, 
-.linkcard2 > div > p, h2 {
+.linkcard3 > img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 0px;
+}
+
+ div > p,
+ div > h2 {
     margin: 20px;
 }
 
 .linkcard1 > div > p, 
-.linkcard2 > div > p {
+.linkcard2 > div > p,
+.linkcard3 > div > p {
     margin-top: 0px;
 }
 
@@ -194,36 +224,25 @@ section {
     color: white;
 }
 
+#logolinkcard {
+    border-radius: 0px;
+  }
+
 /* --- concept page ---> */
 
-.stepscard1,
-.stepscard2 {
+.stepcards > section{
     display: flex;
     flex-direction: row;
     background-color: #fff2cb;
 }
 
-.stepscard1 > img,
-.stepscard2 >img,
-.stepscard3 > img,
-.stepscard4 > img {
+.stepcards > section > img {
     max-width: 120px;
     align-items: center;
     display: flex;  
 }
 
-.stepscard1 h2,
-.stepscard2 h2,
-.stepscard3 h2,
-.stepscard4 h2{
-    margin-right: 0px;
-    margin-left: 10px;
-}
-
-.stepscard1 div,
-.stepscard2 div,
-.stepscard3 div,
-.stepscard4 div {
+.stepcards div {
     width: 50%;
 }
 
@@ -237,33 +256,124 @@ section {
     margin-left: 87.5px;
 }
 
-
 .stepscard2 > div > p {
     margin-right: 10px;
 }
 
-/* --- footer --- */
-
-footer > nav > ul {
-    text-align: left;
-    font-family: forma;
+.icon {
+    width: 60px;
+    align-items: center;
 }
 
-footer > nav > ul > li > a {
-    text-decoration: none;
-    color: black;
-}
-
-footer > nav > p {
+/* --- infographic page --- */
+.infographictop {
+    display: flex;
+    flex-direction: row;
     margin: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-footer h2 {
-    color: #b6622e;
+
+
+.infographictopright,
+.infographictopleft {
+    width: 150px;
+    height: 195px;
+    border-radius: 25px;
+    background-color: #fff2cb;
 }
 
-footer > nav :nth-child(7){
-    font-size: 10px;
+.infographictop img {
+    width: 60px;
+    height: 63px;
+}
+
+.countbig {
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    color: #07733e;
+} 
+
+.infographictopleft > p,
+.infographictopright > p {
+    margin: 0 0 17px 0;
     text-align: center;
 }
 
+.invertbody {
+    background-color: #07733e;
+}
+
+.invert {
+    color: #fff2cb;
+}
+
+.brownwhitecard{
+    background-color: #b6622e;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff2cb;
+    text-align: left;
+}
+
+.houtsoort > h2 {
+    color: #fff2cb;
+    margin-left: 20px;
+}
+
+.houtinfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.houtinfo > img {
+    width: 75px;
+    margin: 10px;
+}
+
+/* --- connectie page --- */
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff2cb;
+}
+
+.aboutme img {
+    width: 100px;
+}
+
+.imgsection > img {
+    width: 350px;
+    border-radius: 25px;
+}
+
+.brownwhitecard > p,
+.brownwhitecard > h2{
+    padding: 10px;
+}
+
+.projects > div{
+    display: flex;
+    flex-direction: row;
+    background-color: #b6622e;
+    border-radius: 25px;
+    margin: 15px;
+    color: #fff2cb;
+}
+
+.projects > div > img {
+    max-width: 150px;
+    margin: 10px;
+}
+
+.projects > h2 {
+    margin-left: 20px;
+    color: #fff2cb;
+}
