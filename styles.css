@@ -237,13 +237,17 @@ section {
 }
 
 .stepcards > section > img {
-    max-width: 120px;
+    max-width: 130px;
     align-items: center;
     display: flex;  
 }
 
 .stepcards div {
     width: 50%;
+}
+
+.stepcards p {
+    text-align: center;
 }
 
 .stepscard3 > img,
@@ -253,7 +257,7 @@ section {
 
 .stepscard2 > img,
 .stepscard4 > img {
-    margin-left: 87.5px;
+    margin-left: 50px;
 }
 
 .stepscard2 > div > p {
