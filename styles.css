@@ -1,13 +1,12 @@
 body{
     background-color: #fff2cb;
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
 h1 {
     font-size: 40px;
     font-family: nunito;
-    font-weight: semibold;
     color: #07733e;
 }
 
@@ -16,16 +15,19 @@ h2{
     font-family: nunito;
     font-weight: bolder;
     text-align: left;
-    margin-left: 0px;
+    margin: 10px 0 0 20px;
     color: #07733e;
+}
+
+.h2white {
+    color: #fff2cb
 }
 
 h3{
     font-size: 20px;
     font-family: nunito;
-    font-weight: medium;
-    margin: 20px 0px 0px 20px;
-
+    margin: 10px 0 0 20px;
+    text-align: left;
 }
 
 p {
@@ -33,11 +35,11 @@ p {
     font-family: outfit;
     font-weight: 500;
     text-align: left;
+    margin: 15px 0 15px 20px;
 }
 
 li {
     font-family: nunito;
-    font-weight: medium;
 }
 
 a {
@@ -92,13 +94,11 @@ header img {
     max-width: 50px;
 }
 
-header{
-    background-color: white;
+header {
     width: 335px;
     padding: 10px;
     position: fixed;
     bottom: 0;
-    border-radius: 25px;
     margin: 10px;
 } 
 
@@ -128,7 +128,7 @@ header div ul {
     flex: auto; /* Zorgt voor opnemen van ruimte in de ul door li */
     list-style: none;
     padding: 10px;
-    margin: 0px;
+    margin: 0;
     font-weight: bold;
 }
 
@@ -151,7 +151,6 @@ footer > p {
 
 footer h2 {
     color: #b6622e;
-    margin-left: 20px;
 }
 
 footer{
@@ -193,24 +192,8 @@ section {
 #linkcards img {
     width: 80px;
     height: 80px;
-    margin-right: 20px;
-}
-
-.linkcard3 > img {
-    width: 80px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 0px;
-}
-
- div > p,
- div > h2 {
-    margin: 20px;
-}
-
-#linkcards div > p{
-    margin-top: 0px;
-}
+    margin: 0 20px
+}       
 
 #linkcards a {
     color: black;
@@ -221,12 +204,8 @@ section {
     color: #fff2cb;
 }
 
-.linkcard2 h2 {
-    color: #fff2cb;
-}
-
 #logolinkcard {
-    border-radius: 0px;
+    border-radius: 0;
   }
 
 /* --- concept page ---> */
@@ -280,7 +259,6 @@ section {
 .icon {
     width: 80px;
     height: 60px;
-    align-items: center;
 }
 
 /* --- infographic page --- */
@@ -292,10 +270,7 @@ section {
     justify-content: space-between;
 }
 
-
-
-.infographictopright,
-.infographictopleft {
+.infographictop > section {
     width: 150px;
     height: 185px;
     border-radius: 25px;
@@ -309,15 +284,12 @@ section {
 
 .countbig {
     font-size: 50px;
-    margin: 0px;
-    text-align: center;
     color: #07733e;
     font-family: nunito;
 } 
 
-.infographictopleft > p,
-.infographictopright > p {
-    margin: 0px;
+.infographictop p {
+    margin: 0;
     text-align: center;
 }
 
@@ -335,12 +307,6 @@ section {
     padding: 5px;
     margin: 10px;
     color: #fff2cb;
-    text-align: left;
-}
-
-.houtsoort > h2 {
-    color: #fff2cb;
-    margin-left: 20px;
 }
 
 .houtinfo {
@@ -368,13 +334,6 @@ section {
     width: 100px;
 }
 
-.brownwhitecard > p,
-.brownwhitecard > h2{
-    padding: 10px;
-    margin: 0px;
-    color: #fff2cb;
-}
-
 .projects > div{
     display: flex;
     flex-direction: row;
@@ -388,9 +347,3 @@ section {
     max-width: 190px;
     border-radius: 25px;
 }
-
-.projects > h2 {
-    margin-left: 20px;
-    color: #fff2cb;
-}
-
