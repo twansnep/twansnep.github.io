@@ -20,7 +20,7 @@ h2{
 }
 
 .h2white {
-    color: #fff2cb
+    color: #fff2cb;
 }
 
 h3{
@@ -192,7 +192,7 @@ section {
 #linkcards img {
     width: 80px;
     height: 80px;
-    margin: 0 20px
+    margin: 0 20px;
 }       
 
 #linkcards a {
@@ -259,6 +259,11 @@ section {
 .icon {
     width: 80px;
     height: 60px;
+}
+
+.backgroundinfo {
+    color: #fff2cb;
+    margin: 0;
 }
 
 /* --- infographic page --- */
