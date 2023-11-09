@@ -17,6 +17,7 @@ h2{
     font-weight: bolder;
     text-align: left;
     margin-left: 0px;
+    color: #07733e;
 }
 
 h3{
@@ -41,7 +42,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #07733e;
 }
 
 * {
@@ -102,11 +103,9 @@ header{
 } 
 
 header {
-    background: rgba(255, 255, 255, 0.38);
+    background: #fff2cb;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
@@ -159,7 +158,9 @@ footer{
     margin-bottom: 80px;
 }
 
-
+.invert > h2 {
+    color: #fff2cb;
+}
 
 /* --- homepage ---*/
 
@@ -172,7 +173,7 @@ footer{
     margin-bottom: 28px;
 }
 
-/* linkcards */
+        /* linkcards */
 
 section {
     background-color: #07733e;
@@ -207,14 +208,20 @@ section {
     margin: 20px;
 }
 
-.linkcard1 > div > p, 
-.linkcard2 > div > p,
-.linkcard3 > div > p {
+#linkcards div > p{
     margin-top: 0px;
+}
+
+#linkcards a {
+    color: black;
 }
 
 .linkcard2 {
     background-color: #b6622e;
+    color: #fff2cb;
+}
+
+.linkcard2 h2 {
     color: #fff2cb;
 }
 
@@ -290,7 +297,7 @@ section {
 .infographictopright,
 .infographictopleft {
     width: 150px;
-    height: 195px;
+    height: 185px;
     border-radius: 25px;
     background-color: #fff2cb;
 }
@@ -305,11 +312,12 @@ section {
     margin: 0px;
     text-align: center;
     color: #07733e;
+    font-family: nunito;
 } 
 
 .infographictopleft > p,
 .infographictopright > p {
-    margin: 0 0 17px 0;
+    margin: 0px;
     text-align: center;
 }
 
@@ -360,15 +368,11 @@ section {
     width: 100px;
 }
 
-.imgsection > img {
-    width: 350px;
-    border-radius: 25px;
-}
-
 .brownwhitecard > p,
 .brownwhitecard > h2{
     padding: 10px;
     margin: 0px;
+    color: #fff2cb;
 }
 
 .projects > div{
@@ -381,11 +385,12 @@ section {
 }
 
 .projects > div > img {
-    max-width: 150px;
-    margin: 10px;
+    max-width: 190px;
+    border-radius: 25px;
 }
 
 .projects > h2 {
     margin-left: 20px;
     color: #fff2cb;
 }
+
