@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: orange;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 100px; /* Verhoog de rechtermarge om de lijstitems verder uit elkaar te plaatsen */
+  }  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .section {
+    padding: 50px 20px;
+  }
+
+  .topsection {
+    padding: 50px 20px;
+    background-color: orange;
+    color: white;
+  }
+
+  .topsection h1 {
+    color: white;
+  }
+  
+  h1, h2 {
+    color: orange;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  #about {
+    display: flex;
+    align-items: center; /* Verticaal centreren */
+  }
+  
+  .tekstindex {
+    flex: 1; /* Laat de div het resterende ruimte innemen */
+  }
+  
+  #about img {
+    max-width: 15%; /* Stel een maximale breedte in voor de afbeelding */
+    margin-left: 20px; /* Voeg wat ruimte toe tussen de afbeelding en de tekst */
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .portfolio-item {
+    margin-bottom: 40px;
+  }
+  
+  .slideshow {
+    display: flex;
+    flex-wrap: wrap; /* Zorg ervoor dat de afbeeldingen naar een nieuwe rij gaan als ze niet naast elkaar passen */
+  }
+  
+  .slideshow img {
+    width: calc(25% - 10px); /* Verdeel de ruimte in vier gelijke delen met wat ruimte tussen de afbeeldingen */
+    height: auto; /* Behoud de aspect ratio van de afbeeldingen */
+    margin-right: 10px; /* Voeg wat ruimte toe tussen de afbeeldingen */
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder de afbeeldingen */
+  }
+  
+  .slideshow img:last-child {
+    margin-right: 0; /* Verwijder de rechtermarge van de laatste afbeelding */
+  }
+
+  .portfolio-itemindex {
+    display: inline-block;
+    width: 33.33%; /* Zorg ervoor dat elke portfolio-item 33.33% van de breedte van de container inneemt */
+    box-sizing: border-box; /* Zorg ervoor dat padding en border worden opgenomen in de opgegeven breedte */
+    padding: 0 10px; /* Voeg wat ruimte toe aan de linker- en rechterkant van elke portfolio-item */
+  }
+  
+  .portfolio-itemindex img {
+    width: 100%; /* Zorg ervoor dat alle afbeeldingen binnen elke portfolio-item 100% van de breedte zijn */
+    height: auto; /* Behoud de aspect ratio van de afbeeldingen */
+  }
+  
+  .portfolio-itemindex h3 {
+    margin-top: 10px; /* Voeg wat ruimte toe boven de titel */
+    font-size: 16px; /* Pas de grootte van de titel aan */
+  }
+  
+  .portfolio-itemsindex {
+    display: flex;
+    flex-wrap: wrap; /* Zorg ervoor dat de portfolio-items naar een nieuwe rij gaan als ze niet naast elkaar passen */
+    justify-content: space-between; /* Verdeel de ruimte tussen de portfolio-items */
+  }
+  
+  #contact {
+    background-color: black; /* Zwarte achtergrondkleur */
+    color: white; /* Witte tekstkleur voor betere leesbaarheid */
+  }
+  
+  #contact form {
+    max-width: 600px; /* Maximale breedte van het contactformulier */
+    margin: 0; /* Verwijder de standaardmarges van het formulier */
+    padding: 20px; /* Voeg wat ruimte toe aan de binnenkant van het formulier */
+  }
+  
+  #contact form label {
+    display: block; /* Zet de labels op een nieuwe regel */
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder elk label */
+  }
+  
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
+    width: calc(100% - 20px); /* Maak de invoervelden 100% breed, rekening houdend met de binnenste padding */
+    padding: 10px; /* Voeg wat padding toe aan de invoervelden */
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder elk invoerveld */
+    box-sizing: border-box; /* Zorg ervoor dat padding en border worden opgenomen in de opgegeven breedte */
+  }
+  
+  #contact form textarea {
+    resize: vertical; /* Laat gebruikers alleen de hoogte van het tekstgebied aanpassen */
+  }
+  
+  #contact form button {
+    background-color: white; /* Witte achtergrondkleur voor de knop */
+    color: black; /* Zwarte tekstkleur voor de knop */
+    padding: 10px 20px; /* Voeg wat padding toe aan de knop */
+    border: none; /* Verwijder de rand van de knop */
+    cursor: pointer; /* Verander de cursor naar een pointer bij het zweven over de knop */
+  }
+  
+  #contact form button:hover {
+    background-color: gray; /* Verander de achtergrondkleur van de knop bij zweven */
+  }
+  
+
+  #about {
+    display: flex; /* Gebruik flexbox */
+    align-items: center; /* Centreer de items verticaal */
+  }
+  
+  #about .tekstabout {
+    flex: 1; /* Laat de tekst flexibel groeien om de afbeelding naast zich te plaatsen */
+    margin: 100px;
+  }
+  
+  #about img  {
+    height: auto; /* Zorg ervoor dat de hoogte van de afbeelding automatisch wordt aangepast om de oorspronkelijke verhoudingen te behouden */
+    max-width: 400px; /* Maak de breedte van de afbeelding 50% van de sectie */
+    margin-right: 0; /* Verwijder de rechtermarge van de afbeelding */
+    margin-bottom: 0; /* Verwijder de ondermarge van de afbeelding */
+  }
+  
+  #about h2 {
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder de titel */
+  }
+  
+  #about p {
+    margin: 0; /* Verwijder de standaardmarges van de alinea */
+  }
+
+  
