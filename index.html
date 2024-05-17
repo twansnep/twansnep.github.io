@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Over mij</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="topsection">
+    <h1>Welkom bij mijn portfolio</h1>
+    <p>Welkom op mijn portfolio website! Mijn naam is Twan Snepvangers en ik ben een gepassioneerde CMD student met een creatieve geest en een oog voor detail. Mijn doel is om boeiende en gebruiksvriendelijke websites te creëren die een blijvende indruk achterlaten.</p>
+    <p>Op deze website vind je een verzameling van mijn recente projecten, waarbij ik gebruik heb gemaakt van de nieuwste technologieën en ontwerptrends. Van responsieve websites tot interactieve webapplicaties, ik heb ervaring met verschillende aspecten van webontwikkeling.</p>
+    <p>Neem gerust een kijkje in mijn portfolio en ontdek wat ik te bieden heb. Als je geïnteresseerd bent in samenwerken of gewoon wilt kletsen over webontwikkeling, aarzel dan niet om contact met me op te nemen via het formulier hieronder. Ik kijk ernaar uit om van je te horen!</p></p>
+  </section>
+
+  <section id="about" class="section">
+    <div class="tekstindex">
+        <h2>Kort over mij</h2>
+        <p>Ik ben een student aan de Hogeschool van Amsterdam. Hier studeer ik Communication & Multimedia Design. Dit is een brede opleiding waar de vele kanten van digitaal design terugkomen. Mijn naam is Twan Snepvangers.  Ik ben 19 jaar. Momenteel zit ik in mijn eerste jaar. Met deze opleiding wil ik graag uitvinden welk vakgebied(en) mij het meest aanspreken en waar ik verder mee wil, want je leert altijd door!  </p>
+    </div>      
+    <img src="img/portret.jpg" alt="">
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <p>Vind hier enkele van mijn recente projecten. Maar vind meer op mijn <a href="portfolio.html">Portfolio</a> pagina.</p>
+    <div class="portfolio-itemsindex">
+      <div class="portfolio-item">
+        <img src="img/btb1.png" alt="Project 1">
+        <h3><a href="portfolio.html">Boom Tot Bouw</a></h3>
+      </div>
+      <div class="portfolio-itemindex">
+        <img src="img/ade1.png" alt="Project 2">
+        <h3><a href="portfolio.html">ADE-Guide</a></h3>
+      </div>
+      <div class="portfolio-itemindex">
+        <img src="img/et3.jpg" alt="Project 3">
+        <h3><a href="portfolio.html">Water-Reminder</a></h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Stuur</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Portfolio Twan Snepvangers. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
